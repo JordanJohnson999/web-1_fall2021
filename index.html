@@ -47,6 +47,101 @@
 			margin: auto;
 		}
         /* New CSS Goes Under Here */
+        .jumbotron {
+          height:50vh;
+          position:relative;
+          overflow:hidden;
+          display:flex;
+          justify-content:center;
+          align-items:center;
+        }
+        .jumbotron img {
+          width:100%;
+          display:block;
+          filter:brightness(.7) blur(3px);
+        }
+        .jumbotron-inner {
+          position:absolute;
+          text-align:center;
+          background:rgba(0,0,0,.4);
+          width:60%;
+          height:60%;
+          color: var(--lighttext);
+          border-radius:16px;
+          }
+          .jumbotron-inner > * {
+              padding:1vh;
+              margin:1vh;
+            }
+            .jumbotron-inner h1 {
+              font-size:3rem;
+            }
+            .jumbotron-inner p {
+              font-size:1.5rem;
+              line-height:2.15rem;
+            }
+            /*container flex setup for rows*/
+            .container {
+              display:flex;
+              flex-flow:column nowrap;
+            }
+            .flex-container {
+              display:flex;
+              flex-flow:row wrap;
+              /*since these are items in the containes*/
+              width:100%;
+              justify-content:center;
+              align-items:center;
+              background:#5c6c6e;
+            }
+            .section-header {
+              width:100%;
+              padding:2vh;
+              font-size:2rem;
+              background:var(--darktext);
+              border-bottom:1px black solid;
+              margin:1vh auto;
+            }
+            .flex-item {
+              flex-basis:30%;
+              min-width:200px;
+              padding:1vh;
+              margin:1vh auto;
+              text-align:center;
+            }
+            .flow-item a {
+              display:block;
+              text-decoration:none;
+              color:var(--darktext);
+              border-radius:8px;
+              overflow:hidden;
+            }
+            .flex-item a:hover {
+              box-shadow:6px 8px 6px 3px rgba(0,0,0,0, .32);
+            }
+            .item-image {
+              width:100%;
+              height:32vh;
+              background:cyan;
+              overflow:hidden;
+            }
+            .item-image img {
+              display:block;
+              height:100%;
+              margin:auto;
+            }
+            .item-heading {
+              background:var(--navcolor);
+              color:var(--lighttext);
+              font-size:1.15rem;
+              padding:1vh;
+            }
+            .item-text {
+              width:100%;
+              min-height:15vh;
+              background:var(--lightbg);
+              padding:1.25vh;
+            }
 
 
 
@@ -77,9 +172,9 @@
         <div class="jumbotron-inner">
             <h1>Web Design Homepage</h1>
             <p>
-                First Name Last Name<br>
-                Web 1, 1st Hour<br>
-                DATE
+                Jordan Johnson<br>
+                Web 1, 4th Hour<br>
+                12/15/21
             </p>
         </div>
     </div>
